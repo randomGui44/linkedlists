@@ -1,0 +1,50 @@
+class Node{
+
+private: 
+      int var = 0;
+      Node* link = nullptr;
+      Node* newptr = new Node{var};
+      
+public:
+    
+         Node( )
+         {
+              data = 0;
+              link = nullptr;
+         }
+
+        Node(int d )
+         {
+              data = d;
+              link = nullptr;
+         }
+
+        Node(int d, Node* addr )
+         {
+              data = d;
+              link = addr;
+         }
+
+       void setData(int d) { data = d;}
+       int getData( ) {return data; }
+
+      void setLink(Node* addr) { link = addr;}
+      Node* getLink( ){ return link; }
+      
+      /*Added function for insertion*/
+      void insert(Node* nptr){
+        Node* fptr = nullptr;
+        
+        nptr = fptr;
+        
+        int counter = 1;
+        
+        while(counter<(k-1)){
+            nptr = nptr->getLink();
+            counter++;
+        }/*End while*/
+        newptr->setLink(newptr->getLink);
+        nptr->setLink(newptr);
+     }
+
+};
